@@ -1,4 +1,4 @@
-<div class="description">
+<div class="description help">
   {$header}
 </div>
 
