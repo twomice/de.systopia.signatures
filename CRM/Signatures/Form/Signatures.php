@@ -98,10 +98,9 @@ class CRM_Signatures_Form_Signatures extends CRM_Core_Form {
     $this->assign('contactID', $contact_id);
 
     if ($contact_id == CRM_Core_Session::getLoggedInContactID()) {
-      $header = E::ts('You are editing signatures for yourself (contact ID <em>%1</em>).', array(
-        'domain' => 'de.systopia.signatures',
-        1 => $contact_id,
-      ));
+      $header = E::ts('You are editing signatures for yourself (contact ID %1).', [
+        1 => "<em>$contact_id</em>",
+      ]);
     }
     else {
       $display_name = $contacts = \Civi\Api4\Contact::get(TRUE)
@@ -110,11 +109,10 @@ class CRM_Signatures_Form_Signatures extends CRM_Core_Form {
         ->setLimit(1)
         ->execute()
         ->first()['display_name'];
-      $header = E::ts('You are editing signatures for the contact <em>%1</em> (contact ID <em>%2</em>).', array(
-        'domain' => 'de.systopia.signatures',
-        1 => $display_name,
-        2 => $contact_id,
-      ));
+      $header = E::ts('You are editing signatures for the contact %1 (contact ID %2).', [
+        1 => "<em>$display_name</em>",
+        2 => "<em>$contact_id</em>",
+      ]);
     }
     $this->assign('header', $header);
 
