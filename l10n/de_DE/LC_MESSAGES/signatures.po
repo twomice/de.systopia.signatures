@@ -45,9 +45,13 @@ msgid "Submit"
 msgstr "Absenden"
 
 #: CRM/Signatures/Form/Signatures.php
-msgid "You are editing signatures for the contact with the ID <em>%1</em>"
+msgid "You are editing signatures for yourself (contact ID %1)."
+msgstr "Sie bearbeiten derzeit Ihre eigenen Signaturen (Kontakt-ID %1)."
+
+#: CRM/Signatures/Form/Signatures.php
+msgid "You are editing signatures for the contact %1 (contact ID %2)."
 msgstr ""
-"Sie bearbeiten derzeit die Signaturen für den Kontakt mit der ID <em>%1</em>"
+"Sie bearbeiten derzeit die Signaturen für den Kontakt %1 (Kontakt-ID %2)."
 
 #: CRM/Signatures/Form/Signatures.php
 msgid "The signatures are too long. Please shorten at least one signature."

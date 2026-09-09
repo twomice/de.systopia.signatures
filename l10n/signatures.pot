@@ -31,7 +31,11 @@ msgid "Submit"
 msgstr ""
 
 #: CRM/Signatures/Form/Signatures.php
-msgid "You are editing signatures for the contact with the ID <em>%1</em>"
+msgid "You are editing signatures for yourself (contact ID %1)."
+msgstr ""
+
+#: CRM/Signatures/Form/Signatures.php
+msgid "You are editing signatures for the contact %1 (contact ID %2)."
 msgstr ""
 
 #: CRM/Signatures/Form/Signatures.php
